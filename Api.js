@@ -8,14 +8,14 @@ async function fetchAPOD(){
     const response = await fetch(API_URL);
     const data = await response.json();
 
-    contentDiv.innerHTML = '
-      <h2>${data.title}</h2>
+    contentDiv.innerHTML = 
+      `<h2>${data.title}</h2>
       <img>src="${data.url}" alt="${data.title}">
-      <p>${data.explanation}</p>
+      <p>${data.explanation}</p>`
     ;
   }
    catch (error) {
-     contentDiv.innerHTML = '<p>Error fetching data: ${error.message}</p>';
+     contentDiv.innerHTML = `<p>Error fetching data: ${error.message}</p>`;
    }
     
   }
