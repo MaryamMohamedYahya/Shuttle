@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    min-height: 100vh;
+}
+body{
+    margin: 0;
+    background: radial-gradient(#9D5900, #3D2200);
+}
+.page-title{
+    color: #FF6D00;
+    font-weight: normal;
+    text-align: center;
+    font-size: 6em;
+}
+
+.game-info{
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-info{
+    color: #FFBB89;
+    font-size: 4em;
+}
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+    perspective: 500px;
+}
+.card{
+    position: relative;
+ 
+    height: 175px;
+    width: 125px;
+}
+
+.card-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+    transition: transform 500ms ease-in-out;    
+}
+
+.card.visible .card-back{
+    transform: rotate(-180deg);
+
+}
+
+.card.visible .card-front{
+    transform: rotate(0);
+
+}
+
+.card-back{
+    background-color: black;
+    border-color: #FF6D00;
+}
+
+.card-front{
+ 
+    border-color: #333;
+    transform: rotate(180deg);
+
+}
+.card-value{
+    transition: transform 100ms ease-in-out;
+    transform: scale(0.9);
+}
+.card-front:hover .card-value{
+    transform: scale(1)
+}
+
+.star{
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    transition: width 100ms ease-in-out, height 100ms ease-in-out;
+
+}
+
+.card-face:hover .star{
+    width: 52px;
+    height: 52px;
+}
+
+.star-top-left{
+    transform: rotate(270deg);
+    top: 0;
+    left: 0;
+}
+
+.star-top-right{
+    top: 0;
+    right: 0;
+}
+
+.star-bottom-left{
+    transform: rotate(180deg);
+    bottom: 0;
+    left: 0;
+}
+
+.star-bottom-right{
+    transform: rotate(90deg);
+    bottom: 0;
+    right: 0;
+}
+
+.rocket{
+    align-self: flex-start;
+    transform: translateY(15px);
+    transition: transform 100ms ease-in-out;
+}
+
+.card-back-hover .rocket{
+    transform: translateY(0);
+
+}
