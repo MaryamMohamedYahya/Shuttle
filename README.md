@@ -6,7 +6,7 @@
 ![nasanotion](https://github.com/user-attachments/assets/f5e65cb8-48c0-4dc0-b757-bf3569f32d2f)
 
 # Project Name
-Long Description about project. This project do that. This project is awesome...
+This is a match the cards game.
 ## Team members
 1. Sneha Sivakumar
 2. Maryam Mohamed Yahya
@@ -18,6 +18,6 @@ Long Description about project. This project do that. This project is awesome...
 ## Libraries used
 Library Name - Version
 ## How to configure
-Instructions for setting up project
+Fork the repo
 ## How to Run
-Instructions for running
+Run the file.
