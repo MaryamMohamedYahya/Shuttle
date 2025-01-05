@@ -22,7 +22,7 @@ https://github.com/user-attachments/assets/9b2d5749-2084-49e3-94d7-cee48f8bdc57
 
 
 ## Libraries used
-Library Name - Version
+-
 ## How to configure
 Fork this repository and clone it to your local machine.
 ## How to Run
