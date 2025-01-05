@@ -11,7 +11,7 @@ Match the same images of the Moon.
 1. Sneha Sivakumar
 2. Maryam Mohamed Yahya
 ## Link to product walkthrough
-[How to play]
+[How to play](https://github.com/MaryamMohamedYahya/Shuttle/blob/main/README.md#how-it-works-)
 ## How it Works ?
 - Flip a card to see a surface of the Moon. 
 - Then flip another card and see the surface.
